@@ -20,7 +20,7 @@ Add Xwero\Codestarter\Dev namespace to the psr-4 section of composer.json. Add t
 
 Copy the Flows directory in vendor/xwero/codestarter/assets to that same directory.
 
-Open de config.php in Flows/Php. Add the root_namespace value and for the directories key a nested array of the directories the project works with.<br>
+Open the config.php in Flows/Php. Add the root_namespace value and for the directories key a nested array of the directories the project works with.<br>
 The nested array has one root key, other keys will be ignored.<br>
 The name of the directory may have a {NAME} pattern, during directory creation question will be asked to define the pattern.
 
