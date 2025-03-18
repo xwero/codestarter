@@ -1,5 +1,5 @@
 {
-  "name": "xwero\/codestarter",
+  "name": "xwero/codestarter",
   "description": "Create code files in the command line",
   "type": "library",
   "require": {
