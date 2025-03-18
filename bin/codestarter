@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+
+<?php
+
+if (!is_dir(dirname(__DIR__).'/vendor')) {
+    throw new LogicException('Dependencies are missing. Try running "composer install".');
+}
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Filesystem\Filesystem;
+use Xwero\Codestarter\Console\CodeStarterCommand;
+use Xwero\Codestarter\Console\SetupCommand;
+
+$application = new Application('codestarter', '0.1.0');
+$command = new CodeStarterCommand(new Filesystem());
+
+$application->add($command);
+
+$application->add(new SetupCommand(new Filesystem()));
+
+$application->setDefaultCommand($command->getName());
+$application->run();
+

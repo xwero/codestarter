@@ -1,0 +1,2 @@
+    <?= $content->getDefinition() ?>
+    <?=  $content->getContent() ?>

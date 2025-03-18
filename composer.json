@@ -1,0 +1,33 @@
+{
+  "name": "xwero\/codestarter",
+  "description": "Create code files in the command line",
+  "type": "library",
+  "require": {
+    "php": ">=8.2",
+    "symfony\/console": "^7.2",
+    "symfony\/filesystem": "^7.2",
+    "wyrihaximus\/list-classes-in-directory": "^1.7"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Xwero\\Codestarter\\": "src\/",
+      "Xwero\\Codestarter\\Dev\\": "dev\/"
+    }
+  },
+  "authors": [
+    {
+      "name": "xwero"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "pestphp\/pest": "^3.7",
+    "symfony\/http-foundation": "^7.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp\/pest-plugin": true
+    }
+  }
+}
