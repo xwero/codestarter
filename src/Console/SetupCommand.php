@@ -157,7 +157,7 @@ class SetupCommand extends AbstractCommand
 
         $classes = Lister::classesInDirectories(
             $rootPath,
-            dirname(__DIR__) . '/../vendor'
+            $path . '/vendor'
         );
 
         $output->writeln('<info>Classes are being collected.</info>');

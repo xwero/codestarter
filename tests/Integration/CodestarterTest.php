@@ -215,7 +215,7 @@ describe('Codestarter command', function () {
             '', // 4
             '', // 5
             'y', // 6
-            'Test', // 7
+            'Zxy', // 7
             '', // 8
             '', // 9
         ]);
@@ -235,7 +235,7 @@ describe('Codestarter command', function () {
             ->and($output)->toContain('What is the interface type?') // 8
             ->and($output)->toContain('Has the class methods?')    // 9
             ->and($output)->toContain('use Tests\TestCase;')
-            ->and($output)->toContain('class filename implements Test')
+            ->and($output)->toContain('class filename implements Zxy')
             ->and($output)->toContain('src/name/space/filename.php');
     });
 
@@ -378,7 +378,7 @@ describe('Codestarter command', function () {
             '', // 1
             '', // 2
             'y', // 3
-            'Test', // 4
+            'Zxy', // 4
             '', // 5
             '', // 6
         ]);
@@ -394,7 +394,7 @@ describe('Codestarter command', function () {
             ->and($output)->toContain('What is the interface type?') // 4
             ->and($output)->toContain('What is the interface type?') // 5
             ->and($output)->toContain('Has the interface methods?')    // 6
-            ->and($output)->toContain('interface filename implements Test')
+            ->and($output)->toContain('interface filename implements Zxy')
             ->and($output)->toContain('src/name/space/filename.php');
     });
 
