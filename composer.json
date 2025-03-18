@@ -12,7 +12,6 @@
   "autoload": {
     "psr-4": {
       "Xwero\\Codestarter\\": "src\/",
-      "Xwero\\Codestarter\\Dev\\": "dev\/"
     }
   },
   "authors": [
@@ -20,7 +19,7 @@
       "name": "xwero"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require-dev": {
     "pestphp\/pest": "^3.7",
     "symfony\/http-foundation": "^7.2"
