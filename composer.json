@@ -11,7 +11,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Xwero\\Codestarter\\": "src\/",
+      "Xwero\\Codestarter\\": "src/"
     }
   },
   "authors": [
